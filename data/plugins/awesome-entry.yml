@@ -1,0 +1,17 @@
+# 收到市场收录仓库的 PR 里，用这个文件
+# 路径：data/plugins/Oxygen640__dsh-plugin-nuaa-search.yml
+#
+# 说明：
+# - 不要写 npm: 字段（由 registry 自动采集，手写会被校验拒绝）
+# - 描述里有 ": "（冒号+空格）必须加引号，所以 en/zh 都用单引号包住
+# - 没有发 npm，所以用 tarball: 指向 GitHub Release 里的预构建包
+#   （tarball 的名字不能带版本号，否则下次发版就 404）
+
+url: https://github.com/Oxygen640/dsh-plugin-nuaa-search
+name: Oxygen640/dsh-plugin-nuaa-search
+category: browser
+description:
+  en: 'Zero-key web search provider for the built-in web_search tool: scrapes Bing China, 360 and SearXNG through a backend fallback chain and returns real URLs with snippets and publish dates. No API key and no settings card are required.'
+  zh: '免 key 的 web_search 后端：按降级链抓取 Bing 中文站、360 与 SearXNG，返回真实 URL、摘要与发布日期；不需要任何 API key，也没有设置卡片。面向校园网等拿不到官方 key 的环境。'
+icon: https://raw.githubusercontent.com/Oxygen640/dsh-plugin-nuaa-search/main/assets/icon-180.jpg
+tarball: https://github.com/Oxygen640/dsh-plugin-nuaa-search/releases/latest/download/dsh-plugin-nuaa-search.tgz
